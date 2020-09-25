@@ -1,7 +1,7 @@
-
-
 import React, { Component } from 'react';
-import { ScrollView, Text, FlatList } from 'react-native';
+import { Text, View, ScrollView, FlatList,
+    Modal, Button, StyleSheet,
+    Alert, PanResponder } from 'react-native';
 import { Card, ListItem } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
@@ -13,7 +13,6 @@ const mapStateToProps = state => {
         partners: state.partners
     };
 };
-
 
 class About extends Component { 
 
